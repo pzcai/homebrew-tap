@@ -14,6 +14,13 @@ class MonetizationDoctor < Formula
     end
   end
 
+  on_linux do
+    on_intel do
+      url "https://github.com/pzcai/monetization-doctor-dist/releases/download/v0.1.0/monetization-doctor-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "be9361d1ee225be1fa71da571efcab8822067d0039d529de9dad7b19a32be1b4"
+    end
+  end
+
   def install
     bin.install "monetization-doctor"
     pkgshare.install "README.md", "LICENSE-MIT", "LICENSE-APACHE"
