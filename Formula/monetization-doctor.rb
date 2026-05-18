@@ -1,7 +1,6 @@
 class MonetizationDoctor < Formula
   desc "Release certification for Unity monetization stacks"
   homepage "https://monetization-doctor-web.vercel.app"
-  version "0.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
